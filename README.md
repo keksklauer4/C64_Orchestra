@@ -4,10 +4,10 @@ A schematic and a pcb layout for a serial interface for C64 master-slave communi
 ### ICs required (until now) ###
 
 Usual logic gate types:
-- 74LS04
-- 74LS08
-- 74LS21
-- 74LS30 (8 input NAND)
+- 74LS04 (NOT gates)
+- 74LS08 (2-input AND)
+- 74LS21 (4-input AND)
+- 74LS30 (8-input NAND)
 - 74LS32 (2-input OR)
 
 Registers:
@@ -22,7 +22,7 @@ Misc:
 
 Probably added in the future:
 - Some oscillator (around 1 MHz)
-- 6N137 (highspeed optocoupler)
+- 6n137 (highspeed optocoupler)
 
 
 Probably solely for the receiver:
