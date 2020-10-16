@@ -1,0 +1,447 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x16 J?
+U 1 1 5F89E398
+P 600 1550
+F 0 "J?" H 680 1542 50  0000 L CNN
+F 1 "Conn_01x16" H 680 1451 50  0000 L CNN
+F 2 "" H 600 1550 50  0001 C CNN
+F 3 "~" H 600 1550 50  0001 C CNN
+	1    600  1550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J?
+U 1 1 5F89F648
+P 600 4900
+F 0 "J?" H 518 4275 50  0000 C CNN
+F 1 "Conn_01x08" H 518 4366 50  0000 C CNN
+F 2 "" H 600 4900 50  0001 C CNN
+F 3 "~" H 600 4900 50  0001 C CNN
+	1    600  4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5F8B7FBC
+P 950 3100
+F 0 "#PWR0101" H 950 2950 50  0001 C CNN
+F 1 "+5V" V 965 3228 50  0000 L CNN
+F 2 "" H 950 3100 50  0001 C CNN
+F 3 "" H 950 3100 50  0001 C CNN
+	1    950  3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5F8BACEC
+P 950 3250
+F 0 "#PWR0102" H 950 3000 50  0001 C CNN
+F 1 "GND" V 955 3122 50  0000 R CNN
+F 2 "" H 950 3250 50  0001 C CNN
+F 3 "" H 950 3250 50  0001 C CNN
+	1    950  3250
+	0    1    1    0   
+$EndComp
+$Sheet
+S 1300 750  1050 1750
+U 5F92A19D
+F0 "adress_resolver" 50
+F1 "adress_resolver.sch" 50
+F2 "A0" I L 1300 850 50 
+F3 "A1" I L 1300 950 50 
+F4 "A2" I L 1300 1050 50 
+F5 "A3" I L 1300 1150 50 
+F6 "A4" I L 1300 1250 50 
+F7 "A5" I L 1300 1350 50 
+F8 "A6" I L 1300 1450 50 
+F9 "A7" I L 1300 1550 50 
+F10 "A8" I L 1300 1700 50 
+F11 "A9" I L 1300 1800 50 
+F12 "A10" I L 1300 1900 50 
+F13 "A11" I L 1300 2000 50 
+F14 "A12" I L 1300 2100 50 
+F15 "A13" I L 1300 2200 50 
+F16 "A14" I L 1300 2300 50 
+F17 "A15" I L 1300 2400 50 
+F18 "Dest1" O R 2350 1100 50 
+F19 "Dest2" O R 2350 1200 50 
+F20 "WCR" O R 2350 1350 50 
+F21 "SR1" O R 2350 1550 50 
+F22 "SR2" O R 2350 1650 50 
+F23 "Status" O R 2350 1850 50 
+$EndSheet
+Text GLabel 950  3100 2    50   Input ~ 0
+Global_VCC
+Text GLabel 950  3250 2    50   Input ~ 0
+Global_GND
+Wire Wire Line
+	800  850  1300 850 
+Wire Wire Line
+	800  950  1300 950 
+Wire Wire Line
+	800  1050 1300 1050
+Wire Wire Line
+	800  1150 1300 1150
+Wire Wire Line
+	800  1250 1300 1250
+Wire Wire Line
+	800  1350 1300 1350
+Wire Wire Line
+	800  1450 1300 1450
+Wire Wire Line
+	800  1550 1300 1550
+Wire Wire Line
+	800  2350 850  2350
+Wire Wire Line
+	850  2350 850  2400
+Wire Wire Line
+	850  2400 1300 2400
+Wire Wire Line
+	800  2250 900  2250
+Wire Wire Line
+	900  2250 900  2300
+Wire Wire Line
+	900  2300 1300 2300
+Wire Wire Line
+	800  2150 950  2150
+Wire Wire Line
+	950  2150 950  2200
+Wire Wire Line
+	950  2200 1300 2200
+Wire Wire Line
+	800  2050 950  2050
+Wire Wire Line
+	950  2050 950  2100
+Wire Wire Line
+	950  2100 1300 2100
+Wire Wire Line
+	800  1950 950  1950
+Wire Wire Line
+	950  1950 950  2000
+Wire Wire Line
+	950  2000 1300 2000
+Wire Wire Line
+	800  1850 950  1850
+Wire Wire Line
+	950  1850 950  1900
+Wire Wire Line
+	950  1900 1300 1900
+Wire Wire Line
+	800  1750 950  1750
+Wire Wire Line
+	950  1750 950  1800
+Wire Wire Line
+	950  1800 1300 1800
+Wire Wire Line
+	800  1650 950  1650
+Wire Wire Line
+	950  1650 950  1700
+Wire Wire Line
+	950  1700 1300 1700
+$Sheet
+S 1450 5650 2150 1000
+U 5F9D49C7
+F0 "destination_control" 50
+F1 "destination_control.sch" 50
+F2 "IO0" I T 3450 5650 50 
+F3 "IO1" I T 3300 5650 50 
+F4 "IO2" I T 3150 5650 50 
+F5 "IO3" I T 3000 5650 50 
+F6 "IO4" I T 2850 5650 50 
+F7 "IO5" I T 2700 5650 50 
+F8 "IO6" I T 2550 5650 50 
+F9 "IO7" I T 2400 5650 50 
+F10 "Select_dest1" I T 2100 5650 50 
+F11 "Select_dest2" I T 1950 5650 50 
+F12 "CPU_CLK" I T 1600 5650 50 
+$EndSheet
+Wire Wire Line
+	800  5300 2400 5300
+Wire Wire Line
+	2400 5300 2400 5650
+Wire Wire Line
+	800  5200 2550 5200
+Wire Wire Line
+	2550 5200 2550 5650
+Wire Wire Line
+	800  5100 2700 5100
+Wire Wire Line
+	2700 5100 2700 5650
+Wire Wire Line
+	800  5000 2850 5000
+Wire Wire Line
+	2850 5000 2850 5650
+Wire Wire Line
+	800  4900 3000 4900
+Wire Wire Line
+	3000 4900 3000 5650
+Wire Wire Line
+	800  4700 3300 4700
+Wire Wire Line
+	3300 4700 3300 5650
+Wire Wire Line
+	800  4600 3450 4600
+Wire Wire Line
+	3450 4600 3450 5650
+Wire Wire Line
+	2350 1200 2500 1200
+Wire Wire Line
+	2500 1200 2500 4100
+Wire Wire Line
+	2500 4100 1950 4100
+Wire Wire Line
+	1950 4100 1950 5650
+Wire Wire Line
+	2350 1100 2550 1100
+Wire Wire Line
+	2550 1100 2550 4150
+Wire Wire Line
+	2550 4150 2100 4150
+Wire Wire Line
+	2100 4150 2100 5650
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5FA94103
+P 600 3650
+F 0 "J?" H 518 3425 50  0000 C CNN
+F 1 "Conn_01x01" H 518 3516 50  0000 C CNN
+F 2 "" H 600 3650 50  0001 C CNN
+F 3 "~" H 600 3650 50  0001 C CNN
+	1    600  3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	800  3650 1600 3650
+$Sheet
+S 4050 5650 2050 1100
+U 5FA972F5
+F0 "transmitter" 50
+F1 "transmitter.sch" 50
+F2 "Trigger_INT_Flag" I T 4350 5650 50 
+F3 "Signal" O B 4300 6750 50 
+F4 "IRRequest" O B 4450 6750 50 
+F5 "Done" O B 4600 6750 50 
+F6 "ETransmit" I T 4500 5650 50 
+F7 "Select_SR2" I T 4650 5650 50 
+F8 "Select_SR1" I T 4800 5650 50 
+F9 "IO7" I T 4950 5650 50 
+F10 "IO6" I T 5100 5650 50 
+F11 "IO5" I T 5250 5650 50 
+F12 "IO4" I T 5400 5650 50 
+F13 "IO3" I T 5550 5650 50 
+F14 "IO2" I T 5700 5650 50 
+F15 "IO1" I T 5850 5650 50 
+F16 "IO0" I T 6000 5650 50 
+F17 "Own_CLK" I T 4100 5650 50 
+F18 "CPU_CLK" I T 4250 5650 50 
+$EndSheet
+Wire Wire Line
+	2400 5300 4950 5300
+Wire Wire Line
+	4950 5300 4950 5650
+Connection ~ 2400 5300
+Wire Wire Line
+	2550 5200 5100 5200
+Wire Wire Line
+	5100 5200 5100 5650
+Connection ~ 2550 5200
+Wire Wire Line
+	2700 5100 5250 5100
+Wire Wire Line
+	5250 5100 5250 5650
+Connection ~ 2700 5100
+Wire Wire Line
+	2850 5000 5400 5000
+Wire Wire Line
+	5400 5000 5400 5650
+Connection ~ 2850 5000
+Wire Wire Line
+	3000 4900 5550 4900
+Wire Wire Line
+	5550 4900 5550 5650
+Connection ~ 3000 4900
+Wire Wire Line
+	3150 4800 3150 5650
+Wire Wire Line
+	800  4800 3150 4800
+Wire Wire Line
+	3150 4800 5700 4800
+Wire Wire Line
+	5700 4800 5700 5650
+Connection ~ 3150 4800
+Wire Wire Line
+	3300 4700 5850 4700
+Wire Wire Line
+	5850 4700 5850 5650
+Connection ~ 3300 4700
+Wire Wire Line
+	3450 4600 6000 4600
+Wire Wire Line
+	6000 4600 6000 5650
+Connection ~ 3450 4600
+Wire Wire Line
+	1600 3650 1600 5650
+Wire Wire Line
+	1600 3650 4250 3650
+Wire Wire Line
+	4250 3650 4250 5650
+Connection ~ 1600 3650
+Wire Wire Line
+	2350 1650 4650 1650
+Wire Wire Line
+	4650 1650 4650 5650
+Wire Wire Line
+	2350 1550 4800 1550
+Wire Wire Line
+	4800 1550 4800 5650
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5F9E657D
+P 600 7200
+F 0 "J?" H 518 6975 50  0000 C CNN
+F 1 "Conn_01x01" H 518 7066 50  0000 C CNN
+F 2 "" H 600 7200 50  0001 C CNN
+F 3 "~" H 600 7200 50  0001 C CNN
+	1    600  7200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	800  7200 4450 7200
+Wire Wire Line
+	4450 7200 4450 6750
+$Sheet
+S 7900 4950 550  1000
+U 5F9E9B15
+F0 "outgate" 50
+F1 "outgate.sch" 50
+F2 "Own_CLK" I L 7900 5350 50 
+F3 "Signal" I L 7900 5550 50 
+$EndSheet
+Wire Wire Line
+	4300 6750 4300 7150
+Wire Wire Line
+	4300 7150 6900 7150
+Wire Wire Line
+	6900 7150 6900 5550
+Wire Wire Line
+	6900 5550 7900 5550
+$Sheet
+S 7900 3750 550  500 
+U 5F9F6589
+F0 "clock_circuit" 50
+F1 "clock_circuit.sch" 50
+F2 "Own_CLK" O L 7900 4000 50 
+$EndSheet
+Wire Wire Line
+	7900 4000 6700 4000
+Wire Wire Line
+	6700 4000 6700 5350
+Wire Wire Line
+	6700 5350 7900 5350
+Wire Wire Line
+	6700 5350 4100 5350
+Wire Wire Line
+	4100 5350 4100 5650
+Connection ~ 6700 5350
+$Sheet
+S 6650 950  1350 2000
+U 5F9FF128
+F0 "status_registers" 50
+F1 "status_registers.sch" 50
+F2 "IO0" I L 6650 2800 50 
+F3 "IO1" I L 6650 2700 50 
+F4 "IO2" I L 6650 2600 50 
+F5 "IO3" I L 6650 2500 50 
+F6 "IO4" I L 6650 2400 50 
+F7 "IO5" I L 6650 2300 50 
+F8 "IO6" I L 6650 2200 50 
+F9 "IO7" I L 6650 2100 50 
+F10 "Done_Flag" I L 6650 1850 50 
+F11 "Select_WCR" I L 6650 1700 50 
+F12 "Select_Status" I L 6650 1550 50 
+F13 "ETransmit" O R 8000 1950 50 
+$EndSheet
+Wire Wire Line
+	6000 4600 6000 2800
+Wire Wire Line
+	6000 2800 6650 2800
+Connection ~ 6000 4600
+Wire Wire Line
+	5850 4700 5850 2700
+Wire Wire Line
+	5850 2700 6650 2700
+Connection ~ 5850 4700
+Wire Wire Line
+	5700 4800 5700 2600
+Wire Wire Line
+	5700 2600 6650 2600
+Connection ~ 5700 4800
+Wire Wire Line
+	5550 4900 5550 2500
+Wire Wire Line
+	5550 2500 6650 2500
+Connection ~ 5550 4900
+Wire Wire Line
+	5400 5000 5400 2400
+Wire Wire Line
+	5400 2400 6650 2400
+Connection ~ 5400 5000
+Wire Wire Line
+	5250 5100 5250 2300
+Wire Wire Line
+	5250 2300 6650 2300
+Connection ~ 5250 5100
+Wire Wire Line
+	5100 5200 5100 2200
+Wire Wire Line
+	5100 2200 6650 2200
+Connection ~ 5100 5200
+Wire Wire Line
+	4950 5300 4950 2100
+Wire Wire Line
+	4950 2100 6650 2100
+Connection ~ 4950 5300
+Wire Wire Line
+	2350 1850 5950 1850
+Wire Wire Line
+	5950 1850 5950 1550
+Wire Wire Line
+	5950 1550 6650 1550
+Wire Wire Line
+	2350 1350 6050 1350
+Wire Wire Line
+	6050 1350 6050 1700
+Wire Wire Line
+	6050 1700 6650 1700
+Wire Wire Line
+	4600 6750 4600 6900
+Wire Wire Line
+	4600 6900 6400 6900
+Wire Wire Line
+	6400 6900 6400 1850
+Wire Wire Line
+	6400 1850 6650 1850
+Wire Wire Line
+	8000 1950 8200 1950
+Wire Wire Line
+	8200 1950 8200 3500
+Wire Wire Line
+	8200 3500 4500 3500
+Wire Wire Line
+	4500 3500 4500 5650
+$EndSCHEMATC
