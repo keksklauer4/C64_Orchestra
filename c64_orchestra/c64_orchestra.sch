@@ -14,23 +14,23 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x16 J?
+L Connector_Generic:Conn_01x16 J1
 U 1 1 5F89E398
 P 600 1550
-F 0 "J?" H 680 1542 50  0000 L CNN
+F 0 "J1" H 680 1542 50  0000 L CNN
 F 1 "Conn_01x16" H 680 1451 50  0000 L CNN
-F 2 "" H 600 1550 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 600 1550 50  0001 C CNN
 F 3 "~" H 600 1550 50  0001 C CNN
 	1    600  1550
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x08 J?
+L Connector_Generic:Conn_01x08 J3
 U 1 1 5F89F648
 P 600 4900
-F 0 "J?" H 518 4275 50  0000 C CNN
+F 0 "J3" H 518 4275 50  0000 C CNN
 F 1 "Conn_01x08" H 518 4366 50  0000 C CNN
-F 2 "" H 600 4900 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 600 4900 50  0001 C CNN
 F 3 "~" H 600 4900 50  0001 C CNN
 	1    600  4900
 	-1   0    0    -1  
@@ -215,12 +215,12 @@ Wire Wire Line
 Wire Wire Line
 	2100 4150 2100 5650
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J2
 U 1 1 5FA94103
 P 600 3650
-F 0 "J?" H 518 3425 50  0000 C CNN
+F 0 "J2" H 518 3425 50  0000 C CNN
 F 1 "Conn_01x01" H 518 3516 50  0000 C CNN
-F 2 "" H 600 3650 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 600 3650 50  0001 C CNN
 F 3 "~" H 600 3650 50  0001 C CNN
 	1    600  3650
 	-1   0    0    1   
@@ -310,12 +310,12 @@ Wire Wire Line
 Wire Wire Line
 	4800 1550 4800 5650
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J4
 U 1 1 5F9E657D
 P 600 7200
-F 0 "J?" H 518 6975 50  0000 C CNN
+F 0 "J4" H 518 6975 50  0000 C CNN
 F 1 "Conn_01x01" H 518 7066 50  0000 C CNN
-F 2 "" H 600 7200 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 600 7200 50  0001 C CNN
 F 3 "~" H 600 7200 50  0001 C CNN
 	1    600  7200
 	-1   0    0    1   
@@ -375,6 +375,8 @@ F10 "Done_Flag" I L 6650 1850 50
 F11 "Select_WCR" I L 6650 1700 50 
 F12 "Select_Status" I L 6650 1550 50 
 F13 "ETransmit" O R 8000 1950 50 
+F14 "CPU_CLK" I L 6650 2900 50 
+F15 "Trigger_INT_Flag" O R 8000 2100 50 
 $EndSheet
 Wire Wire Line
 	6000 4600 6000 2800
@@ -444,4 +446,17 @@ Wire Wire Line
 	8200 3500 4500 3500
 Wire Wire Line
 	4500 3500 4500 5650
+Wire Wire Line
+	8000 2100 8100 2100
+Wire Wire Line
+	8100 2100 8100 3450
+Wire Wire Line
+	8100 3450 4350 3450
+Wire Wire Line
+	4350 3450 4350 5650
+Wire Wire Line
+	6650 2900 4250 2900
+Wire Wire Line
+	4250 2900 4250 3650
+Connection ~ 4250 3650
 $EndSCHEMATC

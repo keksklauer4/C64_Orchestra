@@ -15,4 +15,8 @@ Comment4 ""
 $EndDescr
 Text HLabel 4550 2000 2    50   Output ~ 0
 Own_CLK
+Text GLabel 3500 2000 0    50   Input ~ 0
+Own_CLK
+Wire Wire Line
+	3500 2000 4550 2000
 $EndSCHEMATC
