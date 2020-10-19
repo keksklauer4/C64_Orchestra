@@ -1,6 +1,7 @@
 # C64_Orchestra
 A schematic and a pcb layout for a serial interface for C64 master-slave communication.
 
+## This is a work in progress. I do not take any responsibility for what you do with this. Neither can I assure the correctness of anything that is stated here.
 # Documentation
 The board should be hooked directly to exactly 28 pins of the expansion port of the C64:
 - D0-D7 as the data bus
