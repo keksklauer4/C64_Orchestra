@@ -75,19 +75,6 @@ Wire Wire Line
 	2700 3450 2700 3050
 Wire Wire Line
 	2700 3050 2850 3050
-$Comp
-L 74xx_IEEE:74HC237 U?
-U 1 1 5F9410D9
-P 3400 4200
-AR Path="/5F9410D9" Ref="U?"  Part="1" 
-AR Path="/5F92A19D/5F9410D9" Ref="U4"  Part="1" 
-F 0 "U4" H 3400 4716 50  0000 C CNN
-F 1 "74HC237" H 3400 4625 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 3400 4200 50  0001 C CNN
-F 3 "" H 3400 4200 50  0001 C CNN
-	1    3400 4200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1550 2600 1650 2600
 Wire Wire Line
@@ -100,19 +87,6 @@ Wire Wire Line
 	1350 2200 1650 2200
 Wire Wire Line
 	1300 2100 1650 2100
-$Comp
-L 74xx_IEEE:7430 U?
-U 1 1 5F9410EA
-P 2150 2450
-AR Path="/5F9410EA" Ref="U?"  Part="1" 
-AR Path="/5F92A19D/5F9410EA" Ref="U1"  Part="1" 
-F 0 "U1" H 2150 3066 50  0000 C CNN
-F 1 "7430" H 2150 2975 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 2150 2450 50  0001 C CNN
-F 3 "" H 2150 2450 50  0001 C CNN
-	1    2150 2450
-	1    0    0    -1  
-$EndComp
 $Comp
 L 74xx_IEEE:7432 U?
 U 1 1 5F9410F0
@@ -130,10 +104,6 @@ Wire Wire Line
 	3950 2950 3950 3500
 Wire Wire Line
 	3950 3500 2750 3500
-Wire Wire Line
-	2750 3500 2750 4000
-Wire Wire Line
-	2750 4000 2850 4000
 Wire Wire Line
 	1000 2200 1300 2200
 Wire Wire Line
@@ -190,19 +160,19 @@ Wire Wire Line
 	1300 4700 1300 4450
 Wire Wire Line
 	1300 4450 2850 4450
-Text HLabel 4850 4000 2    50   Output ~ 0
+Text HLabel 4850 3900 2    50   Output ~ 0
 Dest1
-Text HLabel 4850 4100 2    50   Output ~ 0
+Text HLabel 4850 4000 2    50   Output ~ 0
 Dest2
 Wire Wire Line
 	4850 4100 3950 4100
 Wire Wire Line
 	3950 4000 4850 4000
-Text HLabel 4850 4200 2    50   Output ~ 0
+Text HLabel 4850 4100 2    50   Output ~ 0
 WCR
-Text HLabel 4850 4300 2    50   Output ~ 0
+Text HLabel 4850 4200 2    50   Output ~ 0
 SR1
-Text HLabel 4850 4400 2    50   Output ~ 0
+Text HLabel 4850 4300 2    50   Output ~ 0
 SR2
 Wire Wire Line
 	3950 4200 4850 4200
@@ -210,10 +180,10 @@ Wire Wire Line
 	4850 4300 3950 4300
 Wire Wire Line
 	3950 4400 4850 4400
-Text HLabel 4850 4500 2    50   Output ~ 0
+Text HLabel 4850 4400 2    50   Output ~ 0
 Status
 Wire Wire Line
-	4850 4500 3950 4500
+	4850 3900 3950 3900
 Text GLabel 1000 5000 0    50   Input ~ 0
 Global_GND
 Text GLabel 1000 5150 0    50   Input ~ 0
@@ -234,15 +204,45 @@ Wire Wire Line
 	1500 3700 1500 3600
 Wire Wire Line
 	1000 5000 1550 5000
+$Comp
+L 74xx_IEEE:74HC238 U?
+U 1 1 5F8BC87D
+P 3400 4100
+F 0 "U?" H 3400 4616 50  0000 C CNN
+F 1 "74HC238" H 3400 4525 50  0000 C CNN
+F 2 "" H 3400 4100 50  0001 C CNN
+F 3 "" H 3400 4100 50  0001 C CNN
+	1    3400 4100
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1550 4100 2850 4100
+	1500 3800 1500 4200
 Wire Wire Line
-	1550 4100 1550 5000
+	2850 4050 1550 4050
 Wire Wire Line
-	1500 4250 2850 4250
+	1550 4050 1550 5000
 Wire Wire Line
-	1500 3800 1500 4250
-Connection ~ 1500 4250
+	2850 4200 1500 4200
+Connection ~ 1500 4200
 Wire Wire Line
-	1500 4250 1500 5150
+	1500 4200 1500 5150
+Wire Wire Line
+	2850 3900 2750 3900
+Wire Wire Line
+	2750 3900 2750 3500
+Text Notes 1950 2050 0    50   ~ 0
+upper address
+$Comp
+L 74xx_IEEE:7430 U?
+U 1 1 5F9410EA
+P 2150 2450
+AR Path="/5F9410EA" Ref="U?"  Part="1" 
+AR Path="/5F92A19D/5F9410EA" Ref="U1"  Part="1" 
+F 0 "U1" H 2150 3066 50  0000 C CNN
+F 1 "7430" H 2150 2975 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2150 2450 50  0001 C CNN
+F 3 "" H 2150 2450 50  0001 C CNN
+	1    2150 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
