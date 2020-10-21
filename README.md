@@ -15,7 +15,7 @@ The board allows interfacing using several registers and may trigger an interrup
 
 For specifying the destination of a packet (each containing exactly 2 bytes), the board has two registers that can be written to (reading is not allowed). In sum, 16 destinations can be chosen in different combinations. Thus, up to 2^16 configurations are possible. The registers currently start at address 0xFFF8, which will change in the future (due to the fact that these addresses are used already). The destination register 1 (DEST1) lies at 0xFFF8, DEST2 (destination register 2) is located at 0xFFF9.
 
-The packet to be send can then be written into two shift registers. Again, they are write-only due to the fact that there is now paralell-out on the chips used. The shift registers each contain 8 bit and are located at 0xFFFB (for SR1, holding the lower 8 bits) and 0xFFFC (for SR2, holding the upper 8 bits).
+The packet to be send can then be written into two shift registers. Again, they are write-only due to the fact that there is no parallel-out on the chips used. The shift registers each contain 8 bit and are located at 0xFFFB (for SR1, holding the lower 8 bits) and 0xFFFC (for SR2, holding the upper 8 bits).
 
 After the packet has been written to the shift registers, the developer has to decide on whether an Interrupt should be triggered on transmission end. Starting transmission and configuring whether triggering an interrupt is done in the same register. The WCR can be found at 0xFFFA. The least significant bit (at position 0) is a flag to set whether the transmission should start, a 1 denoting to start. The bit at position 1 denotes whether an interrupt should be triggered - a "1" indicates that an interrupt will be requested on transmission end.
 
